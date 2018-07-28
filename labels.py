@@ -1,0 +1,1 @@
+startWelcomeMessage = "Hello,\nWelcome To APPV Ads\nTo Start Send One Of These Commands To Procced\n/menu\n/account\n/newAds"
