@@ -7,7 +7,7 @@ from telethon.tl.functions.messages import GetHistoryRequest
 client = TelegramClient(a.session,a.api_id,a.api_hash)
 
 
-channel_username='@namazh' # your channel
+channel_username='namazh' # your channel
 searchVal ="چرادلار امروز ۱۲۰۰۰ تومن نشده؟ چه کسی پاسخگوئه؟ چه خبرتونههه؟ هان؟ \n\nYasiN @Namazh"
 
 
@@ -16,7 +16,7 @@ client.start()
 channel_entity=client.get_entity(channel_username)
 posts = client(GetHistoryRequest(
     peer=channel_entity,
-    limit=0,
+    limit=100,
     offset_date=None,
     offset_id=0,
     max_id=0,

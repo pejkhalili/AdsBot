@@ -7,8 +7,8 @@ from telethon.tl.functions.messages import GetHistoryRequest
 client = TelegramClient(a.session,a.api_id,a.api_hash)
 
 
-channel_username='@namazh' # your channel
-searchVal =9931
+channel_username='https://t.me/joinchat/AAAAAFMkHR_4cJmA61zNBA' # your channel
+searchVal =4
 
 print("Running...")
 client.start()
@@ -31,7 +31,7 @@ for msg in msgs:
     
     if msg.id == searchVal:
         rank = i
-        # print (msg)
+        print (msg)
         print("place:" + str(rank))
         print("View Count:" + str(msg.views))
         print ("Date: " + str(msg.date))
